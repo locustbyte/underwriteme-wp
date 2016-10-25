@@ -1,0 +1,7 @@
+.fp-enabled [@header] {
+  position: fixed !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  top: 0;
+}
