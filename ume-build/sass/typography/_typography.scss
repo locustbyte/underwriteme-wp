@@ -1,0 +1,81 @@
+/* fonts */
+@font-face {
+  font-family: 'Montserrat Light';
+  src: url('assets/fonts/Montserrat-Light.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat Extra Light';
+  src: url('assets/fonts/Montserrat-ExtraLight.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url('assets/fonts/Montserrat-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat Ultra Light';
+  src: url('assets/fonts/Montserrat-UltraLight.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	color: $color__text-main;
+	font-family: $font__main;
+	@include font-size(1);
+	line-height: $font__line-height-body;
+}
+
+@import "headings";
+
+@import "copy";
+
+.text{
+  &.text-size-14{
+    font-size: 14px;
+  }
+  &.text-size-16{
+    font-size: 16px;
+  }
+  &.text-size-20{
+    font-size: 20px;
+  }
+  &.text-size-26{
+    font-size: 26px;
+  }
+  &.text-size-45{
+    font-size: 45px;
+  }
+
+  &.text-color-orange{
+    color: $orange;
+  }
+  &.text-color-white{
+    color: $white;
+  }
+  &.text-color-light-blue{
+    color: $light-light-blue;
+  }
+
+  &.align-left{
+    text-align: left;
+  }
+  &.align-center{
+    text-align: center;
+  }
+  &.align-right{
+    text-align: right;
+  }
+}

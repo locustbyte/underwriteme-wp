@@ -1,0 +1,130 @@
+body{
+	background-color: #37424a;
+}
+.ume-background{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4f5c64+7,37424a+64 */
+	background: #4f5c64; /* Old browsers */
+	background: -moz-radial-gradient(bottom, ellipse cover,  #4f5c64 7%, #37424a 64%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(bottom, ellipse cover,  #4f5c64 7%,#37424a 64%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at bottom,  #4f5c64 7%,#37424a 64%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f5c64', endColorstr='#37424a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	
+	svg{
+		zoom: 3;
+		margin-left: -260px;
+	}
+}
+
+.fp-tableCell{
+	padding-bottom: 100px;
+}
+
+.text{
+	&.text-size-20{
+		font-size: 20px;
+	}
+	&.text-size-45{
+		font-size: 45px;
+	}
+
+	&.text-color-orange{
+		color: $orange;
+	}
+	&.text-color-white{
+		color: $white;
+	}
+}
+
+
+.ume-logo{
+	position: absolute;
+    width: 170px;
+    height: 40px;
+    top: 30px;
+    z-index: 999;
+    left: 80px;
+}
+
+.light-blue button{
+	background-color: $light-blue;
+}
+
+.light-grey button{
+	background-color: $light-grey;
+}
+
+#fp-nav{
+	&.right {
+	    right: 80px;
+
+	    li{
+	    	a{
+	    		span{
+	    			background: #2a333a;
+	    			margin: 0px;
+	    			width: 12px; 
+	    			height: 12px;
+	    		}
+	    	}
+
+	    	a.active{
+	    		span{
+	    			background: #009aa5;
+	    			margin: 0px;
+	    			width: 12px; 
+	    			height: 12px;
+	    		}
+	    	}
+	    }
+	}
+}
+
+#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span {
+    height: 12px;
+    width: 12px;
+    margin: 0px;
+    border-radius: 100%;
+}
+
+#fp-nav ul li a span, #fp-nav ul li:hover a span, .fp-slidesNav ul li a span, .fp-slidesNav ul li:hover a span {
+    height: 12px;
+    width: 12px;
+    margin: 0px;
+    border-radius: 100%;
+}
+
+.nks_cc_trigger_tabs #nks-tab-1 .fa:before {
+    color: transparent;
+}
+.nks_cc_sidebar_pos_right .nks_cc_trigger_tabs:not([class*=ncf_tab]):not([class*=nksub_tab]) {
+    left: auto;
+    right: 55px;
+    top: 50px !important;
+}
+.nks_cc_trigger_tabs .fa {
+    color: $orange;
+}
+.nks_cc_trigger_tabs [id*=nks-tab] .fa-inverse:before, body .nks_cc_trigger_tabs .ncf-tab-icon .fa-inverse:before, body .nks_cc_trigger_tabs .nksub-tab-icon .fa-inverse:before {
+    color: $orange !important;
+}
+
+#nks-content-1 {
+    background-color: #2a333a !important;
+    h1.title{
+    	display: none;
+    }
+    #menu-ninja-1{
+    	margin: 0px;
+    	li{
+    		list-style: none;
+    		a{
+    			color: white;
+    			text-decoration: none;
+    			font-size: 20px;
+    		}
+    	}
+    }
+}
