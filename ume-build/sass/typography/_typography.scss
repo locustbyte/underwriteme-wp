@@ -43,6 +43,9 @@ textarea {
 @import "copy";
 
 .text{
+  &.text-size-8{
+    font-size: 8px;
+  }
   &.text-size-14{
     font-size: 14px;
   }

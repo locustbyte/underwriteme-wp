@@ -16,6 +16,17 @@ body{
 		zoom: 3;
 		margin-left: -260px;
 	}
+
+	&.fadeOut{
+		@include fadeOut();
+	}
+	&.fadeIn{
+		@include fadeIn();
+	}
+}
+
+.hide{
+	display: none;
 }
 
 .fp-tableCell{
@@ -38,6 +49,47 @@ body{
 	}
 }
 
+.blk-background{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background-color: #272727;
+    &.fadeOut{
+    	@include fadeOut();
+    }
+}
+.scroll-down-mouse-icon{
+	margin-bottom: 0px !important;
+}
+
+.comp-slide-1{
+	background: url(assets/images/page1.png);
+    background-repeat: no-repeat;
+    background-position: 20%;
+}
+.comp-slide-2{
+	background: url(assets/images/page2.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.comp-slide-3{
+	background: url(assets/images/page3.png);
+    background-repeat: no-repeat;
+    background-position: 30% 90%;
+}
+.comp-slide-4{
+	background: url(assets/images/page4.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.comp-slide-5{
+	background: url(assets/images/page5.png);
+    background-repeat: no-repeat;
+    background-position: 20%;
+}
 
 .ume-logo{
 	position: absolute;
@@ -97,7 +149,7 @@ body{
 }
 
 .nks_cc_trigger_tabs #nks-tab-1 .fa:before {
-    color: transparent;
+    color: transparent !important;
 }
 .nks_cc_sidebar_pos_right .nks_cc_trigger_tabs:not([class*=ncf_tab]):not([class*=nksub_tab]) {
     left: auto;
@@ -127,4 +179,26 @@ body{
     		}
     	}
     }
+}
+
+.height-30{
+	height:30%;
+}
+.height-60{
+	height:60%;
+}
+
+.vc_row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.vc_column_container {
+	.vc_column-inner{
+		height: 100%;
+		.wpb_wrapper{
+			height: 100%;
+		}
+	}
+    height: 100%;
 }

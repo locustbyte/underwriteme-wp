@@ -1,0 +1,17 @@
+.component-slide-0-pwr-btn, .component-slide-0-title{
+	&.zoomIn{
+		@include zoomIn();
+	}
+	&.zoomOut{
+		@include zoomOut();
+	}
+}
+
+.scroll-down-mouse-icon{
+	&.bottom-down{
+		@include fadeOutDown();
+	}
+	&.bottom-up{
+		@include fadeInUp();
+	}
+}

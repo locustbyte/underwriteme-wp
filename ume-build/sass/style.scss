@@ -64,6 +64,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "typography/typography";
 
 /*--------------------------------------------------------------
+# Animatecss
+--------------------------------------------------------------*/
+@import "animatewithsass/animate";
+
+/*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
 @import "elements/elements";

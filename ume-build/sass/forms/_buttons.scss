@@ -26,8 +26,11 @@ input[type="submit"] {
 }
 
 .discover-btn{
-	button{
-		background-color: $light-blue !important;
-		border-radius: 3px;	
+	display: inline;
+	margin-right: 10px !important;
+    margin-left: 10px !important;
+	a{
+		width: 165px;
+		border-radius: 3px !important;
 	}
 }
