@@ -19,9 +19,25 @@ body{
 
 	&.fadeOut{
 		@include fadeOut();
+		-webkit-transition: all 0.5s ease-in;
+	    -webkit-animation-duration: 0.5s;
+
+	    -moz-transition: all 0.5s ease-in;
+	    -moz-transition-duration: 0.5s;
+
+	    -o-transition: all 0.5s ease-in;
+	    -o-transition-duration: 0.5s;
 	}
 	&.fadeIn{
 		@include fadeIn();
+		-webkit-transition: all 0.3s ease-in;
+	    -webkit-animation-duration: 0.3s;
+
+	    -moz-transition: all 0.3s ease-in;
+	    -moz-transition-duration: 0.3s;
+
+	    -o-transition: all 0.3s ease-in;
+	    -o-transition-duration: 0.3s;
 	}
 }
 
@@ -148,9 +164,6 @@ body{
     border-radius: 100%;
 }
 
-.nks_cc_trigger_tabs #nks-tab-1 .fa:before {
-    color: transparent !important;
-}
 .nks_cc_sidebar_pos_right .nks_cc_trigger_tabs:not([class*=ncf_tab]):not([class*=nksub_tab]) {
     left: auto;
     right: 55px;
