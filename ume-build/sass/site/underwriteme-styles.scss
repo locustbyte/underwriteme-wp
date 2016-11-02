@@ -11,7 +11,7 @@ body{
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	
+
 	svg{
 		zoom: 3;
 		margin-left: -260px;
@@ -80,7 +80,30 @@ body{
 .scroll-down-mouse-icon{
 	margin-bottom: 0px !important;
 }
+.p.mouse-text{
+	&.fadeOut{
+		@include fadeOut();
+		-webkit-transition: all 0.5s ease-in;
+			-webkit-animation-duration: 0.5s;
 
+			-moz-transition: all 0.5s ease-in;
+			-moz-transition-duration: 0.5s;
+
+			-o-transition: all 0.5s ease-in;
+			-o-transition-duration: 0.5s;
+	}
+	&.fadeIn{
+		@include fadeIn();
+		-webkit-transition: all 0.3s ease-in;
+			-webkit-animation-duration: 0.3s;
+
+			-moz-transition: all 0.3s ease-in;
+			-moz-transition-duration: 0.3s;
+
+			-o-transition: all 0.3s ease-in;
+			-o-transition-duration: 0.3s;
+	}
+}
 .comp-slide-1{
 	background: url(assets/images/page1.png);
     background-repeat: no-repeat;
@@ -133,7 +156,7 @@ body{
 	    		span{
 	    			background: #2a333a;
 	    			margin: 0px;
-	    			width: 12px; 
+	    			width: 12px;
 	    			height: 12px;
 	    		}
 	    	}
@@ -142,7 +165,7 @@ body{
 	    		span{
 	    			background: #009aa5;
 	    			margin: 0px;
-	    			width: 12px; 
+	    			width: 12px;
 	    			height: 12px;
 	    		}
 	    	}
@@ -214,4 +237,67 @@ body{
 		}
 	}
     height: 100%;
+}
+
+.press-card{
+	border-top: 5px solid $orange;
+	&:hover{
+		background: rgba(128, 137, 142, .6) !important;
+	}
+}
+.press-card-date{
+	font-family: 'Montserrat Ultra Light', sans-serif;
+	font-size: 14px;
+	color: #009AA5;
+	line-height: 26px;
+}
+.press-card-title{
+	font-family: 'Montserrat Ultra Light', sans-serif;
+	font-size: 25px;
+	color: #E2E2E2;
+	line-height: 30px;
+}
+.press-card-category{
+	font-family: 'Montserrat Ultra Light', sans-serif;
+	font-size: 14px;
+	color: #009AA5;
+	line-height: 26px;
+	text-align: left !important;
+}
+
+.vc_masonry_grid{
+	.vc_grid-item{
+		.vc_gitem-zone{
+			background: rgba(128,137,142,0.20);
+			img{
+				display: none;
+			}
+
+			.vc_custom_heading{
+				h4{
+					margin: 0px;
+					font-family: 'Montserrat Ultra Light', sans-serif;
+					font-size: 25px;
+					color: #E2E2E2;
+					line-height: 30px;
+				}
+			}
+		}
+	}
+}
+
+
+.vc_grid-filter-item{
+	&:hover{
+		background-color: transparent !important;
+	}
+	span{
+		color: $lightest-grey !important;
+	}
+	&.vc_active{
+		background-color: transparent !important;
+		&>span{
+			color: #e2e2e2 !important;
+		}
+	}
 }
