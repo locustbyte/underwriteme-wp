@@ -18,7 +18,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
-<script src="wp-content/themes/underwriteme/js/ume-animations.min.js"></script>
+<script src="wp-content/themes/underwriteme/js/ume-animations.js"></script>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -134,7 +134,7 @@ if (!window.requestAnimationFrame) {
         width: window.innerWidth,
         height: window.innerHeight,
         velocity: 0.1,
-        length: 250,
+        length: 150,
         distance: 120,
         radius: 150,
         stars: []

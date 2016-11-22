@@ -31,3 +31,18 @@ select {
 textarea {
 	width: 100%;
 }
+
+.form3{
+	.wdform_page{
+		background-color: transparent !important;
+		font-family: inherit;
+		text-align: left;
+		.wdform-label{
+			display: none;
+		}
+		input{
+			width: 100%;
+			padding: 10px;
+		}
+	}	
+}

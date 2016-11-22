@@ -46,6 +46,9 @@ textarea {
   &.text-size-8{
     font-size: 8px;
   }
+  &.text-size-12{
+    font-size: 12px;
+  }
   &.text-size-14{
     font-size: 14px;
   }
@@ -58,6 +61,9 @@ textarea {
   &.text-size-22{
     font-size: 22px;
   }
+  &.text-size-25{
+    font-size: 25px;
+  }
   &.text-size-26{
     font-size: 26px;
   }
@@ -67,6 +73,9 @@ textarea {
   &.text-size-45{
     font-size: 45px;
   }
+  &.text-size-55{
+    font-size: 55px;
+  }
 
   &.text-color-orange{
     color: $orange;
@@ -75,7 +84,16 @@ textarea {
     color: $white;
   }
   &.text-color-light-blue{
+    color: $light-blue;
+  }
+  &.text-color-lightest-blue{
+    color: $lightest-blue;
+  }
+  &.text-color-light-light-blue{
     color: $light-light-blue;
+  }
+  &.text-color-light-grey{
+    color: $light-grey;
   }
 
   &.align-left{
@@ -86,5 +104,13 @@ textarea {
   }
   &.align-right{
     text-align: right;
+  }
+
+  &.text-padding-top-20{
+    padding-top: 20px;
+  }
+
+  &.no-decoration{
+    text-decoration: none !important;
   }
 }
